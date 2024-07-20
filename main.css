@@ -8,12 +8,21 @@
 html {
     overflow-x: hidden; /*RETIRAR A ROLAGEM LATERAL*/
 }
+/*
+*{ margin: 0; padding: 0; }: Remove margens e paddings padrões de todos os elementos, para garantir um layout mais consistente.
+box-sizing: border-box;: Inclui as bordas e o padding no tamanho total dos elementos, facilitando o controle do layout.
+font-family: 'Roboto', sans-serif;: Define a fonte padrão para todo o documento.
+html { overflow-x: hidden; }: Remove a rolagem horizontal, evitando que elementos excedam a largura da página.
+*/
 
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
+/*
+.container: Define um contêiner centralizado com uma largura máxima de 1024px, garantindo que o conteúdo não se estenda além dessa largura, mas se ajustando para preencher a largura disponível.
+*/
 
 header, footer {
     background-color: #192a56;
@@ -35,6 +44,11 @@ header {
     left: 0;
     z-index: 1;
 }
+/*
+header, footer: Define a cor de fundo e o padding superior dos cabeçalhos e rodapés, além de alterar a cor do texto para branco.
+header > .container, footer > .container: Alinha os elementos dentro do cabeçalho e do rodapé usando Flexbox, espaçando-os uniformemente.
+header { position: sticky; top: 0; }: Faz o cabeçalho "grudar" no topo da página quando o usuário rola a página para baixo.
+*/
 
 nav {
     display: none;
@@ -55,6 +69,11 @@ nav li a {
     color: #fff;
     text-decoration: none;
 }
+/*
+nav: Inicialmente oculta a navegação e define a cor de fundo e o padding.
+nav li: Remove as bolinhas das listas, exibe os itens em linha, adiciona margem e altera a aparência do texto.
+nav li a: Define a cor do link como branco e remove o sublinhado.
+*/
 
 .menu-hamburguer{
     width: 32px;
@@ -68,15 +87,21 @@ nav li a {
     display: block;
     margin-bottom: 5px;
 }
+/*
+.menu-hamburguer: Define o tamanho e o cursor do ícone de menu.
+.menu-hamburguer span: Estiliza as barras do ícone de menu.
+*/
 
 .container-flex{
     display: flex;
 }
+/*.container-flex: Aplica o layout Flexbox para organizar os filhos do contêiner.*/
 
 #sobre-a-loja img {
     max-width: 400px;
     margin-right: 24px;
 }
+/*#sobre-a-loja img: Define a largura máxima da imagem e adiciona margem à direita para espaçamento.*/
 
 section {
     padding: 48px 0;
@@ -85,6 +110,10 @@ section {
 section h2 {
     margin-bottom: 16px;
 }
+/*
+section: Adiciona padding vertical às seções.
+section h2: Adiciona margem inferior aos títulos das seções.
+*/
 
 .lista-veiculos {
     flex-wrap: wrap;
@@ -107,6 +136,13 @@ section h2 {
 .item-central {
     margin: 0 5%;
 }
+/*
+.lista-veiculos: Permite que os itens se organizem em múltiplas linhas, se necessário.
+.lista-veiculos li: Remove as bolinhas das listas, define a largura máxima e adiciona margem inferior.
+.lista-veiculos li img: Define a largura máxima das imagens.
+.lista-veiculos li h3: Adiciona margem vertical aos títulos dos itens.
+.item-central: Adiciona margem horizontal específica a itens centrais.
+*/
 
 button {
     display: block;
@@ -131,6 +167,11 @@ button {
     color: rgb(48, 48, 48);
     font-size: 14px;
 }
+/*
+button: Estiliza os botões, incluindo cor, padding, borda, tipografia e cursor.
+.price: Adiciona margem vertical e define o display como bloco.
+.price del: Define a cor e o tamanho da fonte de preços cortados.
+*/
 
 .form-campo{
     margin-bottom: 16px;
@@ -160,6 +201,14 @@ form {
 form button {
     max-width: 120px;
 }
+/*
+.form-campo: Adiciona margem inferior aos campos do formulário.
+.form-campo label: Define o peso da fonte e o display dos rótulos.
+.form-campo input, .form-campo textarea: Define a largura, display e padding dos campos.
+.form-campo textarea: Impede o redimensionamento e define a altura.
+form: Define a largura máxima do formulário.
+form button: Define a largura máxima do botão do formulário.
+*/
 
 footer li {
     list-style: none;
@@ -174,3 +223,8 @@ footer .container {
     justify-content: space-between;
     align-items: center;
 }
+/*
+footer li: Remove as bolinhas das listas e adiciona margem à esquerda.
+footer li img: Define a altura das imagens.
+footer .container: Usa Flexbox para espaçar e alinhar os itens no rodapé.
+*/
