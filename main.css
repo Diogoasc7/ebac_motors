@@ -110,6 +110,10 @@ section {
 section h2 {
     margin-bottom: 16px;
 }
+
+section h2 p {
+    font-size: 22px;
+}
 /*
 section: Adiciona padding vertical às seções.
 section h2: Adiciona margem inferior aos títulos das seções.
